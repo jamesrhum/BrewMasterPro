@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="BrewMaster.Console/BrewMaster.Console.csproj" Id="cd753b9f-0d5e-4de5-8a06-055db2ac596a" />
+  <Project Path="BrewMaster.Core/BrewMaster.Core.csproj" />
+  <Project Path="BrewMaster.Tests/BrewMaster.Tests.csproj" Id="28f26719-ba3d-4a17-a041-7eaff2480d39" />
+</Solution>

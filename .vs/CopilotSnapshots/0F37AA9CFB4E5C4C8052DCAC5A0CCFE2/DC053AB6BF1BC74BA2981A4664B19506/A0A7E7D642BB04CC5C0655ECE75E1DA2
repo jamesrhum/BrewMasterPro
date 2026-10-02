@@ -1,0 +1,11 @@
+﻿namespace BrewMaster.Library.Tests
+{
+    public class PaymentServiceTests
+    {
+        [Fact]
+        public void Test1()
+        {
+
+        }
+    }
+}

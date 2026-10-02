@@ -1,0 +1,61 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using BrewMaster.Core.Models;
+using BrewMaster.Core.Contracts;
+
+namespace BrewMaster.Core.Services
+{
+    public class OrderService : IOrderable
+    {
+        private readonly List<MenuItem> _items = new();
+
+        public IReadOnlyList<MenuItem> Items => _items.AsReadOnly();
+
+        public void AddItem(MenuItem item)
+        {
+            if (item is null) throw new ArgumentNullException(nameof(item));
+            if (item.BasePrice < 0) throw new ArgumentException("Price cannot be negative", nameof(item));
+
+            _items.Add(item);
+        }
+
+        public decimal CalculateTotal()
+        {             
+            return _items.Sum(item => item.BasePrice);
+        }
+
+        public List<MenuItem> GetAllItems()
+        {   
+            return new List<MenuItem>(_items);
+        }
+
+        public bool TryProcessPayment(decimal total, decimal paid, out decimal change)
+        {
+            if (total < 0) throw new System.ArgumentException("Total must not be negative", nameof(total));
+            if (paid < 0) throw new System.ArgumentException("Paid must not be negative", nameof(paid));
+
+            if (paid < total)
+            {
+                change = 0m;
+                return false;
+            }
+
+            change = paid - total;
+            return true;
+        }
+
+        public IEnumerable<Drink> GetHighCaffeineDrinks()
+        {
+            return _items.OfType<Drink>()
+                         .Where(d => string.Equals(d.CaffeineLevel, "High", StringComparison.OrdinalIgnoreCase));
+        }
+
+        public (int Count, decimal Total) GetOrderSummary()
+        {
+            var count = _items.Count;
+            var total = _items.Sum(i => i.BasePrice);
+            return (count, total);
+        }
+    }
+}

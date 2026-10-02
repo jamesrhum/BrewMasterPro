@@ -1,0 +1,12 @@
+D:\Bhaskar\Work\HomeProejct\BrewMasterPro\BrewMaster.Library\bin\Debug\net10.0\BrewMaster.Library.deps.json
+D:\Bhaskar\Work\HomeProejct\BrewMasterPro\BrewMaster.Library\bin\Debug\net10.0\BrewMaster.Library.dll
+D:\Bhaskar\Work\HomeProejct\BrewMasterPro\BrewMaster.Library\bin\Debug\net10.0\BrewMaster.Library.pdb
+D:\Bhaskar\Work\HomeProejct\BrewMasterPro\BrewMaster.Library\obj\Debug\net10.0\BrewMaster.Library.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bhaskar\Work\HomeProejct\BrewMasterPro\BrewMaster.Library\obj\Debug\net10.0\BrewMaster.Library.AssemblyInfoInputs.cache
+D:\Bhaskar\Work\HomeProejct\BrewMasterPro\BrewMaster.Library\obj\Debug\net10.0\BrewMaster.Library.AssemblyInfo.cs
+D:\Bhaskar\Work\HomeProejct\BrewMasterPro\BrewMaster.Library\obj\Debug\net10.0\BrewMaster.Library.csproj.CoreCompileInputs.cache
+D:\Bhaskar\Work\HomeProejct\BrewMasterPro\BrewMaster.Library\obj\Debug\net10.0\BrewMaster.Library.sourcelink.json
+D:\Bhaskar\Work\HomeProejct\BrewMasterPro\BrewMaster.Library\obj\Debug\net10.0\BrewMaster.Library.dll
+D:\Bhaskar\Work\HomeProejct\BrewMasterPro\BrewMaster.Library\obj\Debug\net10.0\refint\BrewMaster.Library.dll
+D:\Bhaskar\Work\HomeProejct\BrewMasterPro\BrewMaster.Library\obj\Debug\net10.0\BrewMaster.Library.pdb
+D:\Bhaskar\Work\HomeProejct\BrewMasterPro\BrewMaster.Library\obj\Debug\net10.0\ref\BrewMaster.Library.dll
